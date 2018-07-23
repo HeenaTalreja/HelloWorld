@@ -1,6 +1,6 @@
 pipeline {
     agent any
-
+    echo "inside"
     stages {
         stage('Build') {
             steps {
