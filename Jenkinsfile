@@ -1,6 +1,6 @@
 pipeline {
-    agent any
-    echo "inside"
+    agent anyemailext body: 'Hi Dear', subject: 'Multipipeline', to: 'heena.talreja@einfochips.com'
+
     stages {
         stage('Build') {
             steps {
@@ -19,3 +19,4 @@ pipeline {
         }
     }
 }
+
