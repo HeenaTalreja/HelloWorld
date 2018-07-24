@@ -1,9 +1,13 @@
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
+
 public class HelloWorldTest {
+	
+   String message = "Hello World";	
+   HelloWorld messageUtil = new HelloWorld(message);
+
    @Test
-   public void testAdd() {
-      String str= "Junit is working fine";
-      assertEquals("Junit is working fine",str);
+   public void testPrintMessage() {
+      assertEquals(message,messageUtil.printMessage());
    }
 }
