@@ -15,7 +15,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                 emailext body: 'Hi Dear', subject: 'Multipipeline', to: 'heena.talreja@einfochips.com'
+                 emailext body: 'Hi Dear', subject: 'Multipipeline', to: 'talrejaheena@gmail.com'
 
             }
         }
