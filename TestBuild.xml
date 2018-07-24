@@ -20,6 +20,7 @@
 
     <target name="run">
         <java jar="build/jar/HelloWorld.jar" fork="true"/>
+		<formatter type="xml"/>
     </target>
 
 </project>
