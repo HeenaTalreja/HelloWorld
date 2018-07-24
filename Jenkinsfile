@@ -1,7 +1,6 @@
 pipeline {
     agent any
-    emailext body: 'Hi Dear', subject: 'Multipipeline', to: 'heena.talreja@einfochips.com'
-
+   
     stages {
         stage('Build') {
             steps {
@@ -16,6 +15,8 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
+                 emailext body: 'Hi Dear', subject: 'Multipipeline', to: 'heena.talreja@einfochips.com'
+
             }
         }
     }
